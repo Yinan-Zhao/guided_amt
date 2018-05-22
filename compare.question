@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<ExternalQuestion xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2006-07-14/ExternalQuestion.xsd">
+    <ExternalURL>https://cvc.ischool.utexas.edu/~jasleen/compare.html?image1=${helper.urlencode($image1)}&amp;image2=${helper.urlencode($image2)}&amp;image3=${helper.urlencode($image3)}&amp;image4=${helper.urlencode($image4)}&amp;image5=${helper.urlencode($image5)}</ExternalURL>
+    <FrameHeight>450</FrameHeight>
+</ExternalQuestion>

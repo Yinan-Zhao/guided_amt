@@ -1,0 +1,67 @@
+<!DOCTYPE>
+	<html>
+		<head>
+			<title>Instructions Page</title>
+			<script type="text/javascript" language="JavaScript">
+				function clickedButton(){
+					var tmpURL = window.location.href;
+					window.location = tmpURL.replace('index.html', 'training.html')
+					window.scrollTo(0, 1000);
+				}
+             </script>
+		</head>
+		
+		<body>
+			<h1>Instructions</h1>
+			<ol>
+
+				<li> In this task, you will be shown 20 pairs of images one by one. </li>
+				<br>
+				<li> For each pair, you must decide which image looks more realistic. Real/fake examples are shown below.</li>
+				<br>
+				<li> You will have 1 training trial to practice before the task really starts.</li>
+				<br>
+				<li> <b>Your submission may be rejected if your responses are incorrect in obvious cases.</b></li>
+			</ol>
+			<table>
+				<tr>
+					<th>Real</th>
+					<th>Fake</th>
+					<th>Real</th>
+					<th>Fake</th>
+					<th>Real</th>
+					<th>Fake</th>
+				</tr>
+				<tr>
+					<th><img src="train/show_0_1.jpg" alt="real1" width="224" height="224"/></th>
+					<th><img src="train/show_0_0.jpg" alt="fake1" width="224" height="224"/></th>
+					<th><img src="train/show_1_1.jpg" alt="real1" width="224" height="224"/></th>
+					<th><img src="train/show_1_0.jpg" alt="fake1" width="224" height="224"/></th>
+					<th><img src="train/show_2_1.jpg" alt="real1" width="224" height="224"/></th>
+					<th><img src="train/show_2_0.jpg" alt="fake1" width="224" height="224"/></th>
+				</tr>
+				
+				<!--<tr>
+					<th>Real</th>
+					
+					<th>Fake</th>
+				</tr>
+				<tr>
+					<th><img src="test_img/instruction_img/real_0.jpg" alt="real1" width="300" height="300"/></th>
+					<th><img src="test_img/instruction_img/fake_0.jpg" alt="fake1" width="300" height="300"/></th>
+				</tr>
+				
+				<tr>
+					<th><img src="test_img/instruction_img/real_1.jpg" alt="real1" width="300" height="300"/></th>
+					<th><img src="test_img/instruction_img/fake_1.jpg" alt="fake1" width="300" height="300"/></th>
+				</tr>
+				
+				<tr>
+					<th><img src="test_img/instruction_img/real_2.jpg" alt="real1" width="300" height="300"/></th>
+					<th><img src="test_img/instruction_img/fake_2.jpg" alt="fake1" width="300" height="300"/></th>
+				</tr>!-->
+			</table>
+			<br>
+			<button id="next_button" onclick="clickedButton()">Next</button>
+		</body>
+	</html>

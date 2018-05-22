@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<head>
+		<title>Image Flashing</title>
+	</head>
+	<body onload="show()">
+		<div id="test_start" style="display: none">
+			<h3 id="test_start">The training phase is over.  Press "Next" to begin the task.</h3>
+			<button id="next_button_start" onclick="Next()">Next</button><br><br>
+		</div>
+		<div class="container" id="content">
+			<h1 id="title_real_train">Do you think this picture is real?</h1>
+			<h1 id="title_gt" style="display:none">Answers</h1>
+			<div id = "myDiv" style="display:none"><img id = "myImage" src = "test_img/train/000.jpg"/></div><br>
+			<div id="radios">
+			<p>
+			<form id="mturk_form" method="POST" action="https://www.mturk.com/mturk/externalSubmit">
+				<input type="hidden" id="assignmentId" name="assignmentId" value="">
+				<input type="hidden" id="obj" name="obj" value="">
+				<input type="radio" name="choice" onclick="handleClick()" value="yes">Yes<br>
+				<input type="radio" name="choice" onclick="handleClick()" value="no">No<br>
+			</form>
+			</p>
+			</div>
+			<h3 id="answer_correct" style="display:none">Correct!</h3>
+			<h3 id="answer_wrong" style="display:none">Wrong...</h3>
+			<h3 id="answer_real" style="display:none">It is a <b>Real</b> image !</h3>
+			<h3 id="answer_fake" style="display:none">It is a <b>Fake</b> image !</h3>
+			<p>
+				<button id="next_button" onclick="Next()">Next</button><br><br>
+				Comments:
+					<input type="textarea" id="text1" /><br>
+			</p>
+			<p class="text-center" id="page_train_count" style="display:block">Page <span id="pageTrainNum">1</span> of <span id="totalTrainPages">3</span> in training</p>
+			<p class="text-center" id="page_total_count" style="display:none">Page <span id="pageNum">0</span> of <span id="totalPages">20</span></p>
+		</div>
+		<script src="training.js"></script>
+		<!--<script src="amt_helper.js"></script>!-->
+	</body>
+</html>

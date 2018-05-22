@@ -1,0 +1,4 @@
+<ExternalQuestion xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2006-07-14/ExternalQuestion.xsd">
+    <ExternalURL>https://cvc.ischool.utexas.edu/~jasleen/project/training.html?image1=${helper.urlencode($image1)}</ExternalURL>
+    <FrameHeight>450</FrameHeight>
+</ExternalQuestion>

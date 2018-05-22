@@ -1,0 +1,17 @@
+image1	image2
+test_img/ours/000/000.jpg	test_img/baseline/000/000.jpg
+test_img/ours/000/001.jpg	test_img/baseline/000/001.jpg
+test_img/ours/000/002.jpg	test_img/baseline/000/002.jpg
+test_img/ours/000/003.jpg	test_img/baseline/000/003.jpg
+test_img/ours/000/004.jpg	test_img/baseline/000/004.jpg
+test_img/ours/000/005.jpg	test_img/baseline/000/005.jpg
+test_img/ours/000/006.jpg	test_img/baseline/000/006.jpg
+test_img/ours/000/007.jpg	test_img/baseline/000/007.jpg
+test_img/ours/000/008.jpg	test_img/baseline/000/008.jpg
+test_img/ours/000/009.jpg	test_img/baseline/000/009.jpg
+test_img/ours/001/000.jpg	test_img/baseline/001/000.jpg
+test_img/ours/001/001.jpg	test_img/baseline/001/001.jpg
+test_img/ours/001/002.jpg	test_img/baseline/001/002.jpg
+test_img/ours/001/003.jpg	test_img/baseline/001/003.jpg
+test_img/ours/001/004.jpg	test_img/baseline/001/004.jpg
+test_img/ours/001/005.jpg	test_img/baseline/001/005.jpg

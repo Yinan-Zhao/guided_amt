@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<head>
+		<title>Image Flashing</title>
+	</head>
+	<body onload="show()">
+		<div id="test_start" style="display: none">
+			<h3 id="test_start">Training now over. Press "Next" to begin the task.</h3>
+			<button id="next_button_start" onclick="Next()">Next</button><br><br>
+		</div>
+		<div class="container" id="content">
+			<h1 id="title_real_train">Which image looks more realistic?</h1>
+			<h1 id="title_gt" style="display:none">Answer</h1>
+			<table>
+				<tr>
+					<th><img id = "myImage" src = "train/000.jpg"/></th>
+					<th><img id = "myImage1" src = "train/001.jpg"/></th>
+				</tr>
+				<tr>
+				<div id="radios">
+				<p>
+				<form id="mturk_form" method="POST" action="https://www.mturk.com/mturk/externalSubmit">
+					<input type="hidden" id="assignmentId" name="assignmentId" value="">
+					<input type="hidden" id="obj" name="obj" value="">
+					<th><input type="radio" name="choice" onclick="handleClick()" value="left">Left is better<br></th>
+					<th><input type="radio" name="choice" onclick="handleClick()" value="right">Right is better<br></th>
+				</form>
+				</p>
+				</div>
+				</tr>
+			</table>
+			<h3 id="answer_correct" style="display:none">Correct!</h3>
+			<h3 id="answer_wrong" style="display:none">Wrong...</h3>
+			<p>
+				<button id="next_button" onclick="Next()">Next</button><br><br>
+				Comments:
+					<input type="textarea" id="text1" /><br>
+			</p>
+			<p class="text-center" id="page_train_count" style="display:block">Page <span id="pageTrainNum">1</span> of <span id="totalTrainPages">3</span> in training</p>
+			<p class="text-center" id="page_total_count" style="display:none">Page <span id="pageNum">0</span> of <span id="totalPages">20</span></p>
+		</div>
+		<script src="training.js"></script>
+		<!--<script src="amt_helper.js"></script>!-->
+	</body>
+</html>
