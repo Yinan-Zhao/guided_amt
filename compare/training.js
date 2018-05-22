@@ -222,8 +222,8 @@ function Next() {
 			document.getElementById("title_real_train").style.display="block";
 			document.getElementById("page_total_count").style.display="block";
 			document.getElementById("page_train_count").style.display="none";
-			img.src = "../test_img/" + img_list_test[page+start_index][0];
-			img1.src = "../test_img/" + img_list_test[page+start_index][1];
+			img.src = "../test_img1/" + img_list_test[page+start_index][0];
+			img1.src = "../test_img1/" + img_list_test[page+start_index][1];
 			pageNum.innerHTML = ++page;
 			radios[0].checked = false;
 			radios[1].checked = false;
